@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Shopify??</title>
+    <title>What Website??</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "ALOVb4tCCEvII78GZ",
+            });
+        })();
+    </script>
+    <script src="Script.js"></script>
 </html>
 
 <a>
@@ -43,7 +54,7 @@
         Name: <input type="text" name="name"><br><br>
         Email: <input type="text" name="email"><br><br>
         Suggestion: <textarea name="message" rows="4" cols="30"></textarea><br><br>
-        <input type="submit" value="Submit">
+        <input type="submit" onclick="sendMail()">Send value="Submit">
     </form>
 </fieldset>
 </html>
